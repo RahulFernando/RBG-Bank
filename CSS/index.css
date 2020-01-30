@@ -1,0 +1,365 @@
+			@charset "UTF-8";
+
+				.moddal {
+			    display: none; 
+			    position: fixed;
+			    z-index: 1;
+			    padding-top: 100px; 
+			    left: 0;
+			    top: 0;
+			    width: 100%;
+			    height: 100%; 
+			    overflow: auto; 
+			    background-color: rgb(0,0,0); 
+			    background-color: rgba(0,0,0,0.4); 
+			}
+
+			
+			.moddal-content {
+			
+						        height: 170%;
+			    background-color: #380010;
+			    margin: auto;
+			    padding: 77px;
+			    border: 1px solid #888;
+			    width: 80%;
+			    margin-top: -85px;
+			    padding-bottom: 174px;
+			}
+
+			/* The Close Button */
+			.cloose {
+			    color: #aaaaaa;
+			    float: right;
+			    font-size: 28px;
+			    font-weight: bold;
+			}
+
+			.cloose:hover,
+			.cloose:focus {
+			    color: #000;
+			    text-decoration: none;
+			    cursor: pointer;
+			}
+			
+			/*firstnav bar*/
+			a {
+				text-decoration: none;
+			}
+			#banklogo {
+				width: 35px;
+				margin-left: 5px;
+				margin-top: 10px;
+			}
+			#bankname {
+				font-size: 25px;
+				color: #C70039;
+				font-weight: bold;
+				text-decoration: none;
+				display: inline-block;
+				margin-bottom: 0px;
+			}
+			.firstnavbar {
+				background-color: #FFFFFF;
+				overflow: hidden;
+				font-size: 15px;
+				margin-top: 2px;
+				height: 64px;
+
+			}
+			#new {
+				margin-left: 53%;
+			}
+			.toplinks {
+				color: #929292;
+				padding: 0px 10px;
+				text-align: center;
+				font-weight: bold;
+				padding: 10px 10px;
+			}
+			.toplinks:hover {	
+				color: black;
+				border-radius: 50px;
+				background-color: #E2E2E2;
+				height: 10px;
+			}
+			.firstnavbar input {
+				border-color: rgba(199, 0, 57, 0.51);
+			}
+
+			/*secondnav bar*/
+
+			.secondnavbar {
+				padding-bottom: 15px;
+				background-color: black;
+				margin: 0px;
+				padding-top: 15px;
+			}
+			.allsecondlinks {
+				font-size: 32px;
+				color: #b1b1b1;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			#mainbody {
+				background-color: white;
+				padding-top: 15px;
+			}
+			.textimage {
+				background: url(images/coffee-cup-desk-884454.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 1200px;
+				margin-left: auto;
+				margin-right: auto;
+				height: 750px;
+			}
+			.h1imagetext {
+				padding-top: 300px;
+				font-size: 3.0rem;
+				text-align: center;
+				color: white;
+				margin: 0px;
+			}
+			#texthr {
+				width: 550px;
+			}
+			.h3imagetext {
+				text-align: center;
+				font-size: 1.8rem;
+				color: #EFEFEF;
+			}
+			.extraservices {
+				width: 1200px;
+			    padding-left: 67px;
+			}
+			.services {
+				width: 150px;
+				padding: 30px 120px;
+			}
+			.connectwithus {
+				margin-top: 40px;
+				text-align: center;
+			}
+			#footerh2 {
+				width: 300px;
+				border-bottom: 2px solid #C70039;
+				border-top: 2px solid #C70039;
+			}
+			.socialmedia {
+			    padding-left: 435px;
+			}
+			.socialmedia img{
+				width: 40px;
+				padding: 10px 25px;
+				padding-left: 10px;
+			}
+			/*footer*/
+
+			.footer {
+				margin-top: 40px;
+				width: 1200px;
+			    margin-left: 67px;
+			    height: 200px;
+			    background-color: white;
+			    border: 2px solid #D8D8D8;
+			}
+			.footer a{
+				color: black;
+				text-decoration: none;
+			}
+			.footerlinks {
+				list-style: none;
+				display: inline-block;
+				font-weight: bold;
+			}
+			li {
+				padding: 15px 125px;
+
+			}
+			.payments img{
+				width: 30px;
+				padding: 0px 15px;
+			}
+			.downloads {
+				padding-left: 815px;
+				margin-top: 10px;
+				display: inline-block;
+			}
+			.address {
+				display: inline-block;
+				margin-left: 245px;
+			}
+			#license {
+				border: 1px solid black;
+				margin-left: 67px;
+			    padding-left: 0px;
+			    padding-top: 1px;
+			}
+			button {
+				font-size: 25px;
+			    margin-left: 300px;
+			    background-color: black;
+			    color: green;
+			    font-weight: bold;
+			    border-color: black
+			}
+			input[type=text], input[type=password], input[type=tel]{
+			   	width: 100%;
+			   	padding: 12px 20px;
+			   	margin: 8px 0;
+			   	display: inline-block;
+			   	border: 1px solid #ccc;
+			   	box-sizing: border-box;
+			 }
+			.pro{
+			 	float: right;
+			 	margin-top: 5px;
+			 }
+
+			.button {
+				margin-left: 0px;
+				margin-top: 30px;
+			    background-color: #4CAF50;
+				color: white;
+			    padding: 5px 18px;
+			    border: none;
+			    cursor: pointer;
+			    width: 130px;
+			}
+			.button:hover {
+			   	opacity: 0.8;
+			}
+			.cancelbtn {
+				margin-left: 0px;
+			    background-color: #383838;
+			    margin-top: 30px;
+				color: white;
+			    padding: 5px 20px;
+			    border: none;
+			    cursor: pointer;
+			    width: 130px;
+			}
+			.cancelbtn:hover{
+				opacity: 0.8;
+			}
+			.sign{
+				padding-left: 18px;
+				padding-right: 18px;
+				font-size: 18px;
+				color: rgba(214, 214, 214, 0.83)
+
+			}
+			.sign:hover{
+				color: white;
+			}
+			.imgcontainer {
+			    text-align: center;
+			    margin: 24px 0 12px 0;
+			   	position: relative;
+			}
+
+			.container {
+
+			    padding: 16px;
+			    padding-left: 200px;
+			    padding-right: 200px;
+			}
+			span.psw {
+			    float: right;
+			    padding-top: 16px;
+			}
+			span a{
+				color: black;
+			}
+			.modal {
+			    display: none; 
+			    position: fixed; 
+			    z-index: 1; 
+			    left: 0;
+			    top: 0;
+			    width: 100%; 
+			    height: 100%; 
+			    overflow: auto; 
+			    background-color: rgb(0,0,0); 
+			    background-color: rgba(0,0,0,0.4); 
+			    padding-top: 60px;
+			}
+			.modal-content {
+			   
+			    background-color: #380010;
+			    margin: 5px auto; 
+			    border: 1px solid #888;
+			    width: 89%;
+			    margin-top: 30px; 
+			}
+			.close {
+			    position: absolute;
+			    right: 25px;
+			    top: 0; 
+			    color: #000;
+			    font-size: 35px;
+			    font-weight: bold;
+			}
+			.close:hover,
+			.close:focus {
+			    color: red;
+			    cursor: pointer;
+			}
+			 .animate {
+			    -webkit-animation: animatezoom 0.6s;
+			    animation: animatezoom 0.6s
+			}
+			@-webkit-keyframes animatezoom {
+			    from {-webkit-transform: scale(0)} 
+			    to {-webkit-transform: scale(1)}
+			}
+
+			@keyframes animatezoom {
+			    from {transform: scale(0)} 
+			    to {transform: scale(1)}
+			}
+			.b {
+				color: #C70039;
+			}
+			 .ccancelbtn {
+
+		      padding: 14px 20px;
+		      background-color: #d8d8d8;
+		    }
+		    .bbutton {
+		      background-color: #4CAF50;
+		      color: white;
+		      padding: 14px 20px;
+		      margin: 8px 0;
+		      border: none;
+		      cursor: pointer;
+		      width: 80%;
+		      opacity: 0.9;
+		    }
+		    .ccancelbtn, .ssignupbtn {
+		      float: left;
+		      width: 40%;
+		    }
+		    label {
+		    	color: white;
+		    }
+		    #aboutbank {
+		    	padding-top: 50px;
+				font-size: 21px;
+				text-align: center;
+				padding-left: 22px;
+				padding-bottom: 29px;
+				background-color: rgba(216, 216, 216, 0.27);
+				margin-right: 67px;
+				margin-top: 9px;
+				margin-bottom: 9px
+		    }
+		    .mediafile {
+		    		display: inline-flex;
+		    		margin-top: 40px;
+		    	    border: 5px solid rgb(247, 247, 247);
+				    margin-left: 64px;
+				    margin-right: 63px;
+				    margin-bottom: 40px;
+		    }

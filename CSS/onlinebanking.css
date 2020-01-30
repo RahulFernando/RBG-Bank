@@ -1,0 +1,172 @@
+/*firstnav bar*/
+
+a {
+	text-decoration: none;
+}
+#banklogo {
+	width: 35px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+#bankname {
+	font-size: 25px;
+	color: #C70039;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+.firstnavbar {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	font-size: 15px;
+	margin-top: 2px;
+	height: 64px;
+
+}
+#new {
+	margin-left: 53%;
+}
+.toplinks {
+	color: #929292;
+	padding: 0px 10px;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 10px;
+}
+.toplinks:hover {	
+	color: black;
+	border-radius: 50px;
+	background-color: #E2E2E2;
+	height: 10px;
+}
+.firstnavbar input {
+	border-color: rgba(199, 0, 57, 0.51);
+}
+.secondnavbar {
+	padding-bottom: 15px;
+	background-color: black;
+	margin: 0px;
+	padding-top: 15px;
+}
+#dashboard {
+	margin-left: 31%;
+}
+.secondnavbarlinks:hover {
+	color: white;
+	border-bottom: 2px solid #C70039;
+}
+
+#banklogo {
+	width: 35px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+#bankname {
+	font-size: 25px;
+	color: #C70039;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+.secondnavbarlinks {
+	font-size: 20px;
+	color: #b1b1b1;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 15px;
+}
+.login {
+	color: #4FA140;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 15px;
+	border-left: 2px solid #E2E2E2;
+}
+.login:hover {
+    color: #4FA140;
+	border-radius: 50px;
+	background-color: #E2E2E2;
+}
+.profile{
+	color: #4FA140;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 15px;
+	border-left: 2px solid #E2E2E2;
+}
+.profile:visited{
+	color: yellow;
+}
+.profile:active{
+	color: red;
+}
+.customer-profile{
+	background-color: #eaeae1;
+}
+.pic{
+	margin-left: 45%;
+	margin-right: 40%;
+}
+.connectwithus {
+	text-align: center;
+			}
+#footerh2 {
+	width: 300px;
+	border-bottom: 2px solid #C70039;
+	border-top: 2px solid #C70039;
+}
+.socialmedia {
+			    padding-left: 435px;
+}
+.socialmedia img{
+	width: 40px;
+	padding: 10px 25px;
+	padding-left: 10px;
+}
+
+/*footer*/
+
+.footer {
+	width: 1200px;
+    margin-left: 5.3%;
+    height: 200px;
+    background-color: white;
+    border: 2px solid #D8D8D8;
+    margin-top: 25px;
+}
+.footer a{
+	color: black;
+	text-decoration: none;
+}
+.footerlinks {
+	list-style: none;
+	display: inline-block;
+	font-weight: bold;
+}
+.footerlinks li {
+	padding: 15px 125px;
+
+}
+.payments img{
+	width: 30px;
+	padding: 0px 15px;
+}
+.downloads {
+	padding-left: 815px;
+	margin-top: 10px;
+	display: inline-block;
+}
+.address {
+	display: inline-block;
+	margin-left: 245px;
+}
+#license {
+	border: 1px solid black;
+	margin-left: 5.4%;
+    padding-left: 0px;
+    padding-top: 1px;
+}

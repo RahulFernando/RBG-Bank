@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/onlinebanking.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+			.pay{
+				margin-top: 60px;
+				margin-left: 67px;
+				margin-bottom: 60px;
+				font-size: 30px;
+				border: 2px solid #dcdcdc;
+				margin-right: 67px;
+				height: 600px;
+			}
+			select{
+				padding: 10px;
+				font-size: 18px;
+			}
+			.cont{
+				background-color: #4CAF50;
+				padding: 15px;
+				border: none;
+				opacity: 0.9;
+				color: white;
+				cursor: pointer;
+			}
+
+			.account{
+				margin-left: 859px;
+			}
+
+			.account ul{
+				list-style: none;
+			}
+
+			.account ul li{
+				padding: 0;
+				font-size: 19px;
+			}
+
+			#example1 {
+				margin-right: 35px;
+				float: right;
+				margin-right: 15px;
+			    width: 300px;
+			    border-radius: 20px;
+			    padding: 10px;    
+			    border: 3px solid #d8d8d8;
+			}
+
+			mark{
+				background-color: #ffffff;
+				font-size: 28px;
+				text-decoration: underline;
+			}
+
+			span {
+				margin-top: 15px;
+				font-size: 40px; 
+			}
+
+			#mod{
+				margin-bottom: 20%;
+			}
+			.rs{
+				padding: 10px;
+			}
+</style>
+</head>
+<body>
+
+<!-- first nav bar -->
+		<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="dashboard.html" id="bankname">RGB Bank PLC</a>
+		<a href="NEWDashboard.html" class="toplinks" id="new">New Member Info</a>
+		<a href="SERDashboard.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  		<a href="Dashboard.html" class="secondnavbarlinks" id="dashboard" >Dashboard</a>
+  		<a href="Transfers.html" class="secondnavbarlinks">Transfers</a>
+  		<a href="Payments.html" class="secondnavbarlinks" style="color: white">Payments</a>
+  		<a href="Deposits.html" class="secondnavbarlinks">Deposits</a>
+  		<a href="Loans.html" class="secondnavbarlinks">Loans</a>
+  		<a href="About.html" class="secondnavbarlinks">About</a>
+  		<a href="Contact Us.html" class="secondnavbarlinks" id="contactus">Contact Us</a>
+  		<a href="index.html" class="login">Logout<i class="fas fa-user-minus" style="margin-left: 10px;"></i></a>
+	</div>
+	</div>
+
+	<div id="mod" class="pay">
+
+		<div class="trans">
+		<div class="account">
+		<ul class="acountsss">
+			<li>Account Number-	<sup>*****</sup>4321</li>
+			<li>Account Type- Saving</li>
+		</ul>
+	</div>
+	<div id="example1"><mark>Current Balance</mark> <br> <span> 100,000 <sup>.00</sup> LKR</span></div>
+
+		<div id="mod">
+			<form action="index.html" style="    padding-top: 180px; padding-left: 75px;">
+			 Select one: 
+			  <select name="Select Payment" id="selectPay">
+			    <option value="Payment">-Select your Payment - </option>
+			    <option value="Electricty">Electricty </option>
+			    <option value="Telephone">Telephone Bills</option>
+			    <option value="Water Bills">Water Bills</option>
+			  </select>
+				
+			  Select one : 
+			<form action="/action_page.php">
+			  <select name="Select Payee" id="payee">
+			    <option value="payee">-Select a Payee- </option>
+			    <option value="Electricty Board">Ceylon Elecricity Board</option>
+			    <option value="Telephone company">SriLankan Telecom(SLT)</option>
+			    <option value="Telephone company">Dialog</option>
+			    <option value="Water Board">National Water supply & Draiange Board</option>
+
+			  </select>
+			 <!--input type="text" name="Amount" class="rs" id="rs"-->
+			<button type="submit" value="Continue" onclick="paymentcon()" class="cont">Continue</button>
+		</div>
+
+</div>
+
+	<div>
+		<h2 class="connectwithus"><em>CONNECT WITH US</em></h2><hr id="footerh2">
+	</div>
+
+<!-- Social media-->
+	
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+			<a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+			<a href="https://www.plus.google.com"><img src="https://image.flaticon.com/icons/svg/174/174851.svg"></a>
+			<a href="https://www.linkedin.com"><img src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+			<a href="https://twitter.com"><img src="https://image.flaticon.com/icons/svg/174/174876.svg"></a>
+			<a href="https://youtube.com"><img src="https://image.flaticon.com/icons/svg/174/174883.svg"></a>
+		</div>
+
+
+	<!-- footer -->
+
+	<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>

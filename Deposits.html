@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/onlinebanking.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+	.clearfix{
+		overflow: auto;
+	}
+	h3{
+		padding-left: 40px;
+	}
+	.new{
+		margin-bottom: 100px;
+		margin-top: 50px;
+	}
+	.new table {
+	    font-family: arial, sans-serif;
+	    border-collapse: collapse;
+	    width: 1210px;
+	    margin-top: 50px;
+	    margin-left:65px;
+	}
+
+	.new td {
+	    border: 1px solid #dddddd;
+	    text-align: left;
+	    padding: 8px;
+	}
+
+	tr:nth-child(even) {
+	    background-color: #dddddd;
+
+	a {
+		text-decoration: none;
+	}
+
+	body {
+	    font-family: Arial;
+	}
+
+	* {
+	    box-sizing: border-box;
+	}
+	 th {
+		border: 1px solid #dddddd;
+	    text-align: left;
+	    padding: 8px;
+	    background-color: white;
+	    color: black;
+		}
+	}
+	.go .open, .manage{
+		margin-top: 100px;
+		padding: 14px;
+		border: none;
+		background-color: #c2c2a3;
+		font-size: 15px;
+	}
+	.manage:hover, .open:hover{
+		opacity: 0.5;
+	}
+	.open{
+		margin-left:  350px;
+
+	}
+	.manage{
+		margin-left:  380px;
+	}
+	i {
+		padding-left: 6px;
+	}
+	input[type=text],input[type=password],select {
+	    width: 98%;
+	    padding: 15px;
+	    margin: 5px 0 22px 0;
+	    display: inline-block;
+	    border: none;
+	    background: #f1f1f1;
+	}
+	input[type=text], input[type=password], select:focus{
+		background-color: #ddd;
+    	outline: none;
+	}
+	label{
+		font-family:Courier New;
+		font-size: 18px;
+	}
+	.container{
+		padding: 16px;
+	}
+	.continue{
+		padding: 15px;
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		width: 20%;
+		font-size: 14px;
+	}
+	.continue:hover{
+		opacity: 0.9;
+	}
+	.account{
+	    display: none;
+	    position: fixed;
+	    z-index: 1; 
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    overflow: auto;
+	    background-color: #1a1a1a;
+	    padding-top: 50px;
+
+	}
+	.account-content{
+	    background-color: #fefefe;
+	    margin: 5% auto 15% auto;
+	    border: 1px solid #888;
+	    width: 80%;
+	}
+	@media screen and (max-width: 300px){
+		.continue{
+			width: 100%;
+		}
+	}
+</style>
+</head>
+<body>
+
+<!-- first nav bar -->
+		<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="dashboard.html" id="bankname">RGB Bank PLC</a>
+		<a href="NEWDashboard.html" class="toplinks" id="new">New Member Info</a>
+		<a href="SERDashboard.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  		<a href="Dashboard.html" class="secondnavbarlinks" id="dashboard">Dashboard</a>
+  		<a href="Transfers.html" class="secondnavbarlinks">Transfers</a>
+  		<a href="Payments.html" class="secondnavbarlinks">Payments</a>
+  		<a href="Deposits.html" class="secondnavbarlinks" style="color: white">Deposits</a>
+  		<a href="Loans.html" class="secondnavbarlinks">Loans</a>
+  		<a href="About.html" class="secondnavbarlinks">About</a>
+  		<a href="Contact Us.html" class="secondnavbarlinks" id="contactus">Contact Us</a>
+  		<a href="index.html" class="login">Logout<i class="fas fa-user-minus" style="margin-left: 4px;"></i></a>
+	</div>
+	</div>
+	<div class="new clearfix">
+		<h3>Deposit Accounts</h3>
+		<table>
+			  <tr>
+			    <th>Account Number</th>
+			    <th>Type</th>
+			    <th>Maturity Date</th>
+			    <th>Interest Date</th>
+			    <th>Deposit Balance</th>
+			  </tr>
+			  <tr>
+			  
+			<td> 
+			123456789
+			</td>
+			    <td>FD</td>
+			    <td>30/05/2019</td>
+			    <td>13%</td>
+				
+			<td>200,000.00LKR</td>
+			  </tr>
+			  <tr>
+			    <td> 
+			128765454
+			</td>
+			    <td>FD</td>
+			    <td>31/08/2020</td>
+			    <td>13%</td>
+				
+			<td>100,000.00LKR</td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td></td>
+			    <td></td>
+			       <td></td>
+			  </tr>
+		</table>
+		<div class="go">
+			<button type="button" class="open" onclick="document.getElementById('i01').style.display='block'">Open an Account<i class="fa fa-file-text fa-2x"></i></button>
+			<div id="i01" class="account">
+				<form class="account-content" action="index.html">
+					<div class="container">
+						<label for="accountType">Account Type</label>
+						<select name="Account Type" id="mySelect">
+						    <option value="Savings Account">Savings Account</option>
+						    <option value="Current Account">Current Account</option>
+						    <option value="Fix Deposit Account">Fix Deposit Account</option>
+						    <option value="Foriegn currency Account">Foriegn Curreency account</option>
+					  	</select>
+					  	<label for="userName">User Name</label>
+					  	<input type="text" name="userName" placeholder="User Name" required>
+					  	<label for="password">Password</label>
+					  	<input type="password" name="psw" placeholder="Password" required>
+					  	<label for="Re-Enter">Password</label>
+					  	<input type="password" name="repsw" placeholder="Re-Enter Password" required>
+						<div class="clearfix">
+							<button type="submit" class="continue">Continue</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<button type="button" class="manage" >Manage Deposits <i class="fa fa-folder fa-2x"></i></button>
+		</div>
+	</div>
+	
+
+
+
+	<div>
+		<h2 class="connectwithus"><em>CONNECT WITH US</em></h2><hr id="footerh2">
+	</div>
+
+<!-- Social media-->
+	
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+			<a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+			<a href="https://www.plus.google.com"><img src="https://image.flaticon.com/icons/svg/174/174851.svg"></a>
+			<a href="https://www.linkedin.com"><img src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+			<a href="https://twitter.com"><img src="https://image.flaticon.com/icons/svg/174/174876.svg"></a>
+			<a href="https://youtube.com"><img src="https://image.flaticon.com/icons/svg/174/174883.svg"></a>
+		</div>
+
+
+	<!-- footer -->
+
+	<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+	<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>

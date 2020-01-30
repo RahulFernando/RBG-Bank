@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/onlinebanking.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+			.trans{
+				width: 1170px;
+				height: 500px;
+				margin-left: 70px;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				border: 2px solid #d4d4d4;
+				font-size: 20px; 
+			}
+
+			input[text="text"] {
+				padding: 0px 0px;
+			}
+
+			select{
+				font-size: 20px;
+			}
+
+			button{
+				margin-top: 40px;
+				margin-left: 510px;
+				background-color: #4CAF50;
+				border: none;
+				padding: 12px 49px;
+				color: white;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			.account{
+				margin-left: 859px;
+			}
+
+			.account ul{
+				list-style: none;
+			}
+
+			.account ul li{
+				padding: 0;
+				font-size: 19px;
+			}
+
+			#example1 {
+				margin-right: 35px;
+				float: right;
+				margin-right: 15px;
+			    width: 300px;
+			    border-radius: 20px;
+			    padding: 10px;    
+			    border: 3px solid #d8d8d8;
+			}
+
+			mark{
+				background-color: #ffffff;
+				font-size: 28px;
+				text-decoration: underline;
+			}
+
+			span {
+				margin-top: 15px;
+				font-size: 40px; 
+			}
+</style>
+</head>
+<body>
+
+<!-- first nav bar -->
+	<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="dashboard.html" id="bankname">RGB Bank PLC</a>
+		<a href="newmemberinfo.html" class="toplinks" id="new">New Member Info</a>
+		<a href="Services.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  		<a href="Dashboard.html" class="secondnavbarlinks" id="dashboard" >Dashboard</a>
+  		<a href="Transfers.html" class="secondnavbarlinks" style="color: white">Transfers</a>
+  		<a href="Payments.html" class="secondnavbarlinks">Payments</a>
+  		<a href="Deposits.html" class="secondnavbarlinks">Deposits</a>
+  		<a href="Loans.html" class="secondnavbarlinks">Loans</a>
+  		<a href="About.html" class="secondnavbarlinks">About</a>
+  		<a href="Contact Us.html" class="secondnavbarlinks" id="contactus">Contact Us</a>
+  		<a href="index.html" class="login">Logout<i class="fas fa-user-minus" style="margin-left: 10px;"></i></a>
+	</div>
+	</div>
+
+<div class="trans">
+		<div class="account">
+		<ul class="acountsss">
+			<li>Account Number-	<sup>*****</sup>4321</li>
+			<li>Account Type- Saving</li>
+		</ul>
+	</div>
+	<div id="example1"><mark>Current Balance</mark> <br> <span> 100,000 <sup>.00</sup> LKR</span></div>
+
+
+
+
+		<!-- <div class="trans"> -->
+
+
+			<form action="/action_page.php" style="padding-left: 75px; margin-top: 200px; font-size: 22px;">
+			Account Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="acn" type="text" name="firstname" value="" float="right" style="font-size: 18px; padding-right: 39px; margin-right: -9px;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="amount" type="text" name="lastname" value="" float="left" style="font-size: 18px;">
+			<br><br><br><br>
+
+			Account type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<form action="/action_page.php">
+			  <select name="Account Type" id="mySelect">
+			    <option value="Savings Account">Savings Account</option>
+			    <option value="Current Account">Current Account</option>
+			    <option value="Fix Deposit Account">Fix Deposit Account</option>
+			    <option value="Foriegn currency Account">Foriegn Curreency account</option>
+			  </select>
+			  &nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;
+			  <form action="/action_page.php">
+			Benificiary Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="benName" type="text" name="firstname" value="" float="right" style="font-size: 18px;">
+			</form>
+
+			<button type="button" class="contlbtn" onclick="myFunction()">Continue</button>
+	<div/>
+
+
+
+			<div>
+		<h2 class="connectwithus"><em>CONNECT WITH US</em></h2><hr id="footerh2">
+	</div>
+
+<!-- Social media-->
+	
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+			<a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+			<a href="https://www.plus.google.com"><img src="https://image.flaticon.com/icons/svg/174/174851.svg"></a>
+			<a href="https://www.linkedin.com"><img src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+			<a href="https://twitter.com"><img src="https://image.flaticon.com/icons/svg/174/174876.svg"></a>
+			<a href="https://youtube.com"><img src="https://image.flaticon.com/icons/svg/174/174883.svg"></a>
+		</div>
+
+
+	<!-- footer -->
+
+	<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+<script type="text/javascript" src="js/myScript.js"></script>	
+</body>
+</html>

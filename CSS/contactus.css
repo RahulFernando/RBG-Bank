@@ -1,0 +1,40 @@
+		.contactinfo{
+			padding-left: 167px;
+
+			display: inline-block;
+
+		}
+		.contactusform{
+			display: inline-block ;
+
+		}
+		.texta{
+			width: 600px;
+		}
+
+		#submitbut{
+			border-radius: 10px;
+			font-weight: bold;
+			color: rgb(23, 72,6);
+			background-color: rgb(49, 157, 13);
+			width: 170px;
+			display: inline-block;
+			padding: 5px 15px;
+			text-align: center;
+		}
+
+		#submitbut:hover{
+			background-color: rgb(73, 326,19);
+			border-radius: 10px;
+			color: rgb(23, 72, 6);
+		}
+		.button1{
+			border: none;
+		    color: white;
+		    margin-top: 45px;
+		    margin-left: 44%;
+		    padding: 10px 35px;
+		    background-color: #560914;
+		    font-size: 20px;
+		    font-weight: bold;
+		}

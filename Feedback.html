@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/onlinebanking.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style>
+		#feedbacktext{
+			
+			font-size: 20px;
+
+		}
+		#submitbutton{
+			border-radius: 15px;
+			background-color: #999999;
+			color: red;
+			padding: 5px 15px;
+			width: 200px;
+			font-weight: bold;"
+		}
+		#submitbutton:hover{
+			background-color: #cccccc;
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+
+<!-- first nav bar -->
+		<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="dashboard.html" id="bankname">RGB Bank PLC</a>
+		<a href="NEWDashboard.html" class="toplinks" id="new">New Member Info</a>
+		<a href="SERDashboard.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  		<a href="Dashboard.html" class="secondnavbarlinks" id="dashboard">Dashboard</a>
+  		<a href="Transfers.html" class="secondnavbarlinks">Transfers</a>
+  		<a href="Payments.html" class="secondnavbarlinks">Payments</a>
+  		<a href="Deposits.html" class="secondnavbarlinks">Deposits</a>
+  		<a href="Loans.html" class="secondnavbarlinks">Loans</a>
+  		<a href="About.html" class="secondnavbarlinks">About</a>
+  		<a href="Contact Us.html" class="secondnavbarlinks" id="contactus">Contact Us</a>
+  		<a href="index.html" class="login">Logout<i class="fas fa-user-minus" style="margin-left: 10px;"></i></a>
+	</div>
+
+	<div class="feedback">
+		<h2 style="color: #666666; text-align: center; font-weight: bold; font-size: 40px;">How do you feel about the support you received from us?</h2>
+
+		<table align="center" border="0" style="text-align: center;" >
+			<tr>
+				<td width="250px">
+					<img src="images/happy.png" width="100px" height="100px" alt="Great">
+				</td>
+				<td width="250px">
+					<img src="images/indifferent.png" width="100px" height="100px" alt="Great">
+				</td>
+				<td width="250px">
+					<img src="images/sad.png" width="100px" height="100px" alt="Great">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="feedbacktext">Great</p>
+				</td>
+				<td>
+					<p id="feedbacktext">Indiffernt</p>
+				</td>
+				<td>
+					<p id="feedbacktext">Unhappy</p>
+				</td>
+			</tr>
+		</table>
+		<div style="padding-left: 35%;" >
+			<textarea id="details" placeholder="Tell us what is on your mind...." style="width: 400px; height: 100px;">
+			</textarea>
+		</div>
+		<div align="center">
+			<button id="submitbutton" onclick="feedback()">Submit Feedback</button>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- footer -->
+
+	<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+<script type="text/javascript" src="js/myScript.js"></script>	
+</body>
+</html>

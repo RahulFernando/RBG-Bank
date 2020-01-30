@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/onlinebanking.css">
+	<link rel="stylesheet" type="text/css" href="CSS/contactus.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- first nav bar -->
+		<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="dashboard.html" id="bankname">RGB Bank PLC</a>
+		<a href="NEWDashboard.html" class="toplinks" id="new">New Member Info</a>
+		<a href="SERDashboard.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  		<a href="Dashboard.html" class="secondnavbarlinks" id="dashboard">Dashboard</a>
+  		<a href="Transfers.html" class="secondnavbarlinks">Transfers</a>
+  		<a href="Payments.html" class="secondnavbarlinks">Payments</a>
+  		<a href="Deposits.html" class="secondnavbarlinks">Deposits</a>
+  		<a href="Loans.html" class="secondnavbarlinks">Loans</a>
+  		<a href="About.html" class="secondnavbarlinks">About</a>
+  		<a href="Contact Us.html" class="secondnavbarlinks" id="contactus" style="color: white">Contact Us</a>
+  		<a href="index.html" class="login">Logout<i class="fas fa-user-minus" style="margin-left: 10px;"></i></a>
+	</div>
+	</div>
+
+
+<div style="margin-bottom: 80px;margin-top: 65px; border: 2px solid #dcdcdc;padding-top: 25px;padding-bottom: 25px;">
+
+	<div class="contactinfo">
+		<table border="0" cellpadding="10px"cellspacing="16px"  frame="rhs">
+			<tr>
+				<td align="center">
+					<img src="images/phone.png" width="30px" height="30px">
+				</td>
+				<td width="300px" >
+					+94 xxx-xxxxxx
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="images/fax.jpg" height="30px" width="30px">
+				</td>
+				<td>
+					+94 xxx-xxxxxx
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="images/email.png" width="30px" height="30px">
+				</td>
+				<td>
+					info@rgbbankplc.lk
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="images/location.png" height="40px" width="40px">
+				</td>
+				<td>
+					<p style="font-weight: bold;color: #C70039;"> RGB Bank PLC</p><br>
+					No: xxxxxx xxxxx,<br>
+					xxxxxxxxxx,<br>
+					xxxxxxxxxxxx.
+				</td>
+			</tr>
+
+		</table>
+	</div>
+
+	<div class="contactusform" style="padding-left: 50px;">
+
+		<h2 style="color: #666666; ">Get in touch fast! Fill in the form below</h2>
+
+		<form action="actionform.php">
+			<textarea class="texta" placeholder="First Name*" required="1"></textarea><br><br>
+			<textarea class="texta" placeholder="Last Name*" required="1"></textarea><br><br>
+			<textarea class="texta" placeholder="Email*" required="1"></textarea><br><br>
+			<textarea  class="texta" placeholder="Message*" required="1"></textarea><br><br>
+			<table style="display: inline-block;" >
+				<tr>
+					<td>
+						<textarea style="width:195px; height: 30px;" placeholder="Verfication" required="1" id="verif" value=""></textarea>
+					</td>
+					<td>
+						<img src="images/captcha.jpg" width="200px" height=" 30px">
+					</td>
+					<td>
+						<button id="submitbut" onclick="verification()">Submit></button>
+					</td>
+				</tr>
+			</table>
+
+		</form>
+	</div>
+			<button class="button1"  onclick="window.location.href='Feedback.html'">Feedback</button>
+</div>
+	
+
+
+		<div>
+		<h2 class="connectwithus"><em>CONNECT WITH US</em></h2><hr id="footerh2">
+	</div>
+
+<!-- Social media-->
+	
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+			<a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+			<a href="https://www.plus.google.com"><img src="https://image.flaticon.com/icons/svg/174/174851.svg"></a>
+			<a href="https://www.linkedin.com"><img src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+			<a href="https://twitter.com"><img src="https://image.flaticon.com/icons/svg/174/174876.svg"></a>
+			<a href="https://youtube.com"><img src="https://image.flaticon.com/icons/svg/174/174883.svg"></a>
+		</div>
+
+
+
+
+
+	<!-- footer -->
+
+	<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+<script type="text/javascript" src="js/myScript.js"></script>	
+</body>
+</html>

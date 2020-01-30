@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS/onlinebanking.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+	.clearfix{overflow: auto;}
+
+	select{
+		padding: 10px;
+		font-size: 18px;
+	}
+	button{
+		margin-top: 50px;
+		margin-left: 475px;
+	}
+	input[type="text"] {
+		font-size: 25px;
+	}
+	.con{
+		margin-left: 530px;
+		background-color: #4CAF50;
+		color: white;
+		padding: 15px;
+		border: none;
+		opacity: 0.9;
+		color: white;
+		cursor: pointer;
+	}
+	.check{
+		font-size: 18px;
+		margin-top: 50px;
+		margin-left: 440px;
+	}
+
+
+			.account{
+				margin-left: 800px;
+			}
+
+			.account ul{
+				list-style: none;
+			}
+
+			.account ul li{
+				padding: 0;
+				font-size: 19px;
+			}
+
+			#example1 {
+				margin-right: 35px;
+				float: right;
+				margin-right: -42px;
+			    width: 300px;
+			    border-radius: 20px;
+			    padding: 10px;    
+			    border: 3px solid #d4d4d4;
+			}
+
+			mark{
+				background-color: #ffffff;
+				font-size: 28px;
+				text-decoration: underline;
+			}
+
+			span {
+				margin-top: 15px;
+				font-size: 40px; 
+			}
+	.loan{
+		width: 1150px;
+		border: 2px solid black;
+		margin-top: 60px;
+		margin-left: 70px;
+		margin-bottom: 60px;
+		padding: 60px;
+		font-size: 30px;
+	}
+	select{
+		padding: 10px;
+		font-size: 18px;
+	}
+	button{
+		margin-top: 50px;
+		margin-left: 500px;
+	}
+	input{
+		font-size: 25px;
+	}
+	.con{
+		margin-left: 530px;
+		background-color: #4CAF50;
+		color: white;
+		padding: 15px;
+		border: none;
+		opacity: 0.9;
+		color: white;
+		cursor: pointer;
+	}
+	.check{
+		font-size: 18px;
+		margin-top: 50px;
+		margin-left: 440px;
+	}
+	.calender{
+		margin-top: 50px;
+		margin-left: 400px;
+	}
+	.date, label{
+		font-size: 18px;
+	}
+	.date{
+		width: 60px;
+	}
+	.month, .year{
+		font-size: 13px;
+	}
+
+</style>
+</head>
+<body>
+
+<!-- first nav bar -->
+		<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="dashboard.html" id="bankname">RGB Bank PLC</a>
+		<a href="NEWDashboard.html" class="toplinks" id="new">New Member Info</a>
+		<a href="SERDashboard.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  	<a href="Dashboard.html" class="secondnavbarlinks" id="dashboard" >Dashboard</a>
+  		<a href="Transfers.html" class="secondnavbarlinks">Transfers</a>
+  		<a href="Payments.html" class="secondnavbarlinks">Payments</a>
+  		<a href="Deposits.html" class="secondnavbarlinks">Deposits</a>
+  		<a href="Loans.html" class="secondnavbarlinks" style="color: white">Loans</a>
+  		<a href="About.html" class="secondnavbarlinks">About</a>
+  		<a href="Contact Us.html" class="secondnavbarlinks" id="contactus">Contact Us</a>
+  		<a href="index.html" class="login">Logout<i class="fas fa-user-minus" style="margin-left: 10px;"></i></a>
+	</div>
+
+	<div class="loan">
+		<form method="post" action="index.html">
+			Loan Type :&nbsp;&nbsp;&nbsp;&nbsp;
+			  <select name="Loan Types" id="loan">
+			    <option value="Loan">-Select Loan Type-</option>
+			    <option value="Housing">Housing Loans</option>
+			    <option value="Vehicle">Vehicle Loans</option>
+			    <option value="Quick">Quick Loans</option>
+			  
+			  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  
+		 <form action="/action_page.php">
+			Repayment Frequnacy :&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="Loan Types" id="repayment">
+				<option value="Repayment">-Select Repayment frequancy-</option>
+				<option value="Daily">Daily</option>
+				<option value="Weekly">Weekly </option>
+				<option value="Monthly">Monthly</option>
+				<option value="Yearly">Yearly</option>
+			</select>
+		</form>
+			  <br><br>
+	  	<form action="/action_page.php">
+			  Amount :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input id="am" name="firstname" type="text">
+			 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<form action="/action_page.php">
+			  Loan Period :&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input id="priod" name="firstname" type="text" placeholder="Period">
+	
+			 
+		</form>
+		<div class="calender">
+			<label>Date:</label>
+			<input id="date" type="text" name="date" class="date" value="" required>
+			<span style="font-size: 18px">Month</span>
+			<select form="month" class="month" required>
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+				<option value="June">June</option>
+				<option value="July">July</option>
+				<option value="August">August</option>
+				<option value="September">September</option>
+				<option value="October">October</option>
+				<option value="November">November</option>
+				<option value="December">December</option>
+			</select>
+			<span style="font-size: 18px">Year</span>
+			<select form="year" class="year" required>
+				<option value="1">2018</option>
+				<option value="2">2019</option>
+				<option value="2">2020</option>
+				<option value="4">2021</option>
+				<option value="5">2022</option>
+			</select>
+		</div>
+		<div class="check">
+			<input type="checkbox" checked="checked" name="remember" required>I Agree to Terms & Conditions
+		</div>
+		<button type="submit" class="con" onclick="selectType()">Continue</button>
+	</div>
+
+	<div>
+		<h2 class="connectwithus"><em>CONNECT WITH US</em></h2><hr id="footerh2">
+	</div>
+
+<!-- Social media-->
+	
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+			<a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+			<a href="https://www.plus.google.com"><img src="https://image.flaticon.com/icons/svg/174/174851.svg"></a>
+			<a href="https://www.linkedin.com"><img src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+			<a href="https://twitter.com"><img src="https://image.flaticon.com/icons/svg/174/174876.svg"></a>
+			<a href="https://youtube.com"><img src="https://image.flaticon.com/icons/svg/174/174883.svg"></a>
+		</div>
+	<!-- footer -->
+
+	<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+<script type="text/javascript" src="js/myScript.js"></script>	
+</body>
+</html>

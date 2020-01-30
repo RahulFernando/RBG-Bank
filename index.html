@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+
+	<style type="text/css">
+	
+		.textimage {
+				background: url(images/coffee-cup-desk-884454.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 1200px;
+				margin-left: auto;
+				margin-right: auto;
+				height: 750px;
+			}
+	</style>
+
+</head>
+
+<body>
+
+<!-- first nav bar -->
+		<div class="firstnavbar">
+		<img src="images/banklogow.jpg" id="banklogo">
+		<a href="index.html" id="bankname">RGB Bank PLC</a>
+		<a href="newmemberinfo.html" class="toplinks" id="new">New Member Info</a>
+		<a href="Services.html" class="toplinks">Services</a>	
+		<input type="search" name="search" placeholder="search">
+	</div>
+	<hr>
+
+<!-- secon nav bar -->
+	<div class="secondnavbar">
+  		<a href="index.html" id="home" class="allsecondlinks"><i class="fas fa-home"></i>&nbsp Home</a>
+  		<a href="#" class="allsecondlinks" class="login" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-user-plus"></i> &nbspOnline Banking</a> 
+  	
+  	    	<div id="id01" class="modal">
+	  			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					
+
+	  			<form class="modal-content animate" action="index.html">
+	    			<div class="imgcontainer">
+	      				<i class="fas fa-user-tie fa-7x" style="color: white;"></i>
+	    			</div>
+
+	    			<div class="container">
+	      				<label for="uname"><b>User ID</b></label>
+	      				<input id="username" type="text" placeholder="Enter User Id" name="uname">
+
+	      				<label for="psw"><b>Password</b></label>
+	      				<input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+	      				<button class="button"  type="submit" onclick="validate()">Sign In</button>
+	      				<a href="#" class="sign" id="mytbn">Sign Up</a>
+	      				<!-- <button id="mytbn">Open Modal</button> -->
+
+
+	      				<label>
+	        				<input type="checkbox" checked="checked" name="remember"> Remember me
+	      				</label>
+	    			</div>
+
+	    				<div class="container" style="margin-left: 52px;margin-right: 54px;">
+	      					<button id="button" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Back</button>
+	      						
+	      					<span class="psw" style="color: white;">Forgot <a href="#" style="color: white">password?</a></span>
+	    				</div>
+	  			</form>
+			</div> 
+
+
+		<!-- The Modal -->
+
+			<div id="myModdal" class="moddal">
+
+				  <!-- Modal content -->
+			<div class="moddal-content">
+			 <span class="cloose">&times;</span>
+								   
+				<div class="wrapper">
+			        <form action="con.html" method="post">
+			            <div class="containerr">
+			                <h1 style="color: white;">Sign Up</h1>
+			                <p style="color: white;">Please fill in this form to create an account.</p>
+			                <hr>
+
+			                <label for="first-name"><b>First Name</b></label>
+			                <input type="text" name="first-name" placeholder="First Name" class="first-name clearfix" required>
+
+			                <label for="last-name"><b>Last Name</b></label>
+			                <input type="text" name="last-name" placeholder="Last Name" class="last-name clearfix" required>
+
+			                <label for="account"><b>Account Number</b></label>
+			                <input id="accnum" type="text" name="account" placeholder="Account Number" required>
+
+			                <label for="confirm"><b>Confirm Account Number</b></label>
+			                <input type="text" name="confirm" placeholder="Confirm Account Number" required>
+
+			                <label for="mobile number"><b>Mobile Number</b></label>
+			                <input id="num" type="tel" name="mobile" placeholder="Mobile Number" required>
+
+			                <label for="address"><b>Address</b></label>
+			                <input type="text" name="address" placeholder="Address" required>
+
+			                <label for="branch"><b>Nearest branch of the Bank(optional)</b></label>
+			                <input type="text" name="branch" placeholder="Nearest branch of the Bank(optional)" required>
+
+			                <label for="email"><b>Email</b></label>
+			                <input type="text" placeholder="Enter Email" name="email" required>
+
+			                <label for="psw"><b>Password</b></label>
+			                <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+			                <label for="psw-repeat"><b>Repeat Password</b></label>
+			                <input id="repsw" type="password" placeholder="Repeat Password" name="psw_repeat" required>
+			        
+			                <label>
+			                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			                </label>
+			        
+			                <p style="color: white;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy.</a></p>
+
+			                <div class="clearfix">
+			                    <a href="index.html"><button type="button" class="ccancelbtn">Cancel</button></a>
+			                    <button type="submit" name="signUp" class="ssignupbtn" onclick="signvalidate()" style="padding: 10px 0px;
+			    color: white;">Sign Up</button>
+			                </div>
+			            </div>
+			        </form>
+			    </div>
+
+
+			 </div>
+								
+		</div>
+
+	</div>
+
+
+	<!-- main image -->
+
+		<div id="mainbody">
+
+			<div class="textimage">
+				<h1 class="h1imagetext">Start here, to get there.<hr id="texthr"></h1>
+				<h3 class="h3imagetext"><strong>We're ready to help you finance the home of your dreams,or remodel what you                             have now to increase your home's value.</strong></h3>
+			</div>
+	<div class="mediafile">
+
+			<video width="500" height="300" controls loop="10" muted="" autoplay="autoplay" style="margin-left: 64px;">
+					<source src="Videos/RGB.mp4" type="video/mp4">
+			</video>
+
+			<div id="aboutbank">
+
+
+
+			<b class="b">RGB Bank PLC</b> is a member-owned financial cooperative. This means that we exist to serve the needs of the consumers who own accounts at (or shares of) <b class="b">RGB Bank PLC</b>. They are our owners, and their financial well-being is at the heart of every decision we make. We are one of the largest credit unions in <strong style="color: #002bff;">Sri-Lanka</strong>, and one of the most stable. Our purpose is simple: to provide a sound, convenient alternative to traditional banking.
+		</div>
+	</div>
+
+		<div class="extraservices">
+			<a href="#"><img src="images/ezreload.jpg" class="services"></a>
+			<a href="#"><img src="images/smsalert.jpg" class="services"></a>
+			<a href="#"><img src="images/mobilecash.jpg" class="services"></a>
+		<hr>
+		</div>
+
+
+					
+
+
+<!-- footer-->
+
+	<div>
+		<h2 class="connectwithus"><em>CONNECT WITH US</em></h2><hr id="footerh2">
+	</div>
+
+<!-- Social media-->
+	
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+			<a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+			<a href="https://www.plus.google.com"><img src="https://image.flaticon.com/icons/svg/174/174851.svg"></a>
+			<a href="https://www.linkedin.com"><img src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+			<a href="https://twitter.com"><img src="https://image.flaticon.com/icons/svg/174/174876.svg"></a>
+			<a href="https://youtube.com"><img src="https://image.flaticon.com/icons/svg/174/174883.svg"></a>
+		</div>
+
+	
+		<div class="footer">
+			<div class="payments">
+				<img src="https://image.flaticon.com/icons/svg/196/196561.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196578.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196539.svg">
+				<img src="https://image.flaticon.com/icons/svg/196/196566.svg">
+
+			<div class="downloads">
+				<img src="https://image.flaticon.com/icons/svg/300/300218.svg">
+				<img src="https://image.flaticon.com/icons/svg/831/831276.svg">
+			</div>
+		</div>
+			
+		<ul class="footerlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Online Services</a></li>
+			<li><a href="">Loans</a></li>
+		</ul>
+
+		<ul class="footerlinks">
+			<li><a href="">Accounts</a></li>
+			<li><a href="">Locations</a></li>
+			<li><a href="">FAQ</a></li>
+		</ul>
+
+		<div class="address">
+			<h2 id="bankname">RGB Bank PLC</h2>
+			<p>23/3 New Kandy Road,<br>Malabe</p>
+		</div>
+	</div>
+	<img src="images/license.jpg" id="license">
+
+</footer>
+
+		<script>
+	
+				var modal = document.getElementById('id01');
+
+				window.onclick = function(event) {
+	    		if (event.target == modal) {
+	        	modal.style.display = "none";
+	    		}
+				}
+		</script>
+
+
+
+		<script>
+			var modall = document.getElementById('myModdal');
+
+			var btnn = document.getElementById("mytbn");
+
+			var spann = document.getElementsByClassName("cloose")[0];
+
+			btnn.onclick = function() {
+			    modall.style.display = "block";
+			}
+
+			spann.onclick = function() {
+			    modall.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+			    if (event.target == modall) {
+			        modall.style.display = "none";
+			    }
+			}
+</script>
+
+<script type="text/javascript" src="js/myScript.js"></script>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

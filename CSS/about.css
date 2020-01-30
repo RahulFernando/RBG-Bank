@@ -1,0 +1,42 @@
+.about {
+	margin-top: 40px;
+				    border: 2px solid #d4d4d4;;
+				    margin-left: 67px;
+				    margin-right: 67px;
+				    padding-top: 100px;
+				    padding-bottom: 150px;
+				    background: url(images/rawpixel-567016-unsplacxsh.jpg);
+				    background-size: cover;
+}
+#Missionbank{
+	font-size: 17px; 
+	text-align: center; 
+	padding-right: 100px; 
+	padding-left: 100px; 
+}
+#Missionbank h1 {
+	color: rgb(222, 34, 34);
+    text-decoration: underline
+}
+#Missionbank p {
+	color: rgba(0, 0, 0, 0.77);
+    font-size: 27px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}    
+#Visionbank {
+	font-size: 17px; 
+	text-align: center; 
+	padding-right: 100px; 
+	padding-left: 100px;
+}
+#Visionbank h1 {
+	color: rgb(222, 34, 34);
+    text-decoration: underline;
+}    
+#Visionbank p {
+	color: rgba(0, 0, 0, 0.77);
+    font-size: 27px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}    
